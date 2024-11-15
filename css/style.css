@@ -16,7 +16,7 @@ body {
 
 :root {
     --primary-color: #6ee7b7;
-    --secondary-color: #10b981;
+    --secondary-color: #34d399;
     --accent-color: #202020;
 }
 
@@ -30,7 +30,10 @@ body {
     }
 
     .name-heading {
-        font-size: 1.3rem;
+        font-size: 1.6rem;
+        line-height: 50px;
+        padding-top: 4px;
+        padding-bottom: 4px;
     }
     
     .heading-dua p {
@@ -44,7 +47,7 @@ body {
     .paragraph-description p {
         font-size: 0.8rem;     
     }
-
+    
     .button-container button {
         font-size: 0.7rem;
     }
@@ -55,6 +58,18 @@ body {
 
     .paragraph-bottom {
         width: 85%;
+    }
+
+    .row-satu, .row-dua {
+        flex-direction: column-reverse;
+    }
+    
+    .job-description-container p {
+        font-size: 1rem;
+    }
+
+    .profile .bubble {
+        display: none;
     }
 }
 
@@ -75,11 +90,18 @@ body {
     border-bottom: 1px solid rgba(0, 0, 0, 6%);
     background-color: rgba(255, 255, 255, 97%);
     backdrop-filter: blur(32px);
-    -webkit-backdrop-filter: invert(100%);
 }
 
 nav {
     mix-blend-mode: color-burn;
+}
+
+.logo-container, .logo-kiri svg {
+    display: flex;
+    flex-direction: row-reverse;
+    z-index: 9999;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .navbar {
@@ -110,17 +132,17 @@ nav {
     margin: 0 10%;
 }
 
-.name-heading {
-    /* padding: 4px 0; */
-    font-size: 1.6rem;
-}
 
 .heading {
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
+.name-heading {
+    /* padding: 4px 0; */
+    font-size: 1.9rem;
+}
 
-.name {
+.name-span {
     color: var(--primary-color);
 }
 
@@ -130,38 +152,72 @@ nav {
 }
 
 .paragraph {
-    color: rgba(0, 0, 0, 60%);
-    font-size: 1rem;
+    color: rgba(0, 0, 0, 50%);
+    font-size: 0.9rem;
 }
 
 .paragraph-dua {
     width: 60%;
     text-align: justify;
-    font-weight: 400;
-    color: rgba(0, 0, 0, 50%);
+    font-weight: 300;
     margin-top: 10px;
     /* font-size: 0.9rem; */
+    color: rgba(0, 0, 0, 40%);
 }
 
-.description {
-    font-weight: 300;
-    font-size: 1rem;
-    line-height: 26px;
-    width: 375px;
-}
-
-.paragraph-description {
+.paragraph-description, .paragraph-dua {
+    padding-top: 4px;
     font-size: 0.9rem;
 }
 
-.c-satu::before, .c-dua::before, .c-tiga::before, .c-empat::before {
-    content: '|';
-    color: #868686;
+.heading-wrapper {
+    display: flex;
 }
 
-.ui-ux-designer, .frontend-dev, .illustrator, .designer {
-    color: var(--secondary-color);
+.profile {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    transform: translateX(-50px);
+}
+
+.row-satu, .row-dua {
+    display: flex;
+    column-gap: 4px;
+}
+
+/* .job-description-wrapper {
+    width: 380px;
+} */
+
+.job-description-container {
+    /* background-color: rgba(37, 213, 122, 0.03);
+    width: fit-content;
+    border-radius: 8px;
+    padding: 8px 10px; */
     font-weight: 400;
+    font-size: 1.05rem;
+    line-height: 26px;
+    width: 94%;
+}
+
+/* .ui-ux, .frontend, .illustrator, .gr-designer p {
+    color: rgba(0, 0, 0, 70%);
+} */
+
+.c-satu, .c-dua, .c-tiga, .c-empat {
+    color: rgba(0, 0, 0, 50%);
+}
+
+
+.c-satu::before, .c-dua::before, .c-tiga::before, .c-empat::before {
+    content: '|';
+    color: rgba(0, 0, 0, 30%);
+}
+
+.ui-ux-designer-span, .frontend-span, .illustrator-span, .gr-designer-span {
+    color: var(--secondary-color);
+    font-weight: 500;
 }
 
 .button-container {
@@ -171,12 +227,12 @@ nav {
 }
 
 .contact-button .overview-button, button {
-    padding: 1em 2em;
-    font-weight: 500;
+    padding: 0.9em 3em;
+    font-weight: 600;
     text-align: center;
     color: #fff;
-    border-radius: 8px;
-    background-color: var(--primary-color);
+    border-radius: 10px;
+    background-color: var(--secondary-color);
     transition: 0.1s ease-in;
 }
 
@@ -201,9 +257,7 @@ nav {
 }
 
 .contact-button:hover {
-    background-color: rgb(13, 221, 148, 0%);
-    border: 1px solid var(--secondary-color);
-    color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 .page-wrapper {
