@@ -46,11 +46,11 @@ body {
     }
     
     .paragraph-description p {
-        font-size: 0.8rem;     
+        font-size: 0.8rem;   
     }
     
     .button-container button {
-        font-size: 0.7rem;
+        font-size: 1em;
     }
 
     .paragraph-description p {
@@ -237,6 +237,7 @@ nav {
 }
 
 .contact-button .overview-button, button {
+    font-size: 0.9em;
     padding: 1em 3em;
     font-weight: 600;
     text-align: center;
