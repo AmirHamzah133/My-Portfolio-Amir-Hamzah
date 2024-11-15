@@ -1,0 +1,239 @@
+body {
+    height: 1080px;
+}
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #000;
+    text-decoration: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-color: #4ae8a8;
+    --secondary-color: #0ddd94;
+    --accent-color: #202020;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    column-gap: 30px;
+    font-size: 0.9rem;
+    padding: 26px 0;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    padding-right: 30px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 6%);
+    background-color: rgba(255, 255, 255, 97%);
+    backdrop-filter: blur(32px);
+    -webkit-backdrop-filter: invert(100%);
+}
+
+nav {
+    mix-blend-mode: color-burn;
+}
+
+.navbar {
+    padding: 30px;
+}
+
+.nav a {
+    padding: 4px 6px;
+    border-radius: 6px;
+}
+
+.navbar-wrapper nav a:hover {
+    transform: translateY(1.05px);
+    background-color: rgb(110, 231, 183, 10%);
+    color: var(--primary-color);
+    transition: 0.2s ease-in-out;
+}
+
+.navbar {
+    padding: 6px 0;
+}
+
+.navbar-wrapper {
+    padding-top: 4rem;
+}
+
+.hero {
+    margin: 0 10%;
+}
+
+.name-heading {
+    /* padding: 4px 0; */
+    font-size: 1.5rem;
+}
+
+.heading {
+    font-size: 1.1rem;
+}
+
+@media (max-width: 546px) {
+    .hero {
+        margin: 0 10%;
+    }
+
+    .heading p {
+        font-size: 1rem;
+    }
+
+    .name-heading {
+        font-size: 1.2rem;
+    }
+    
+    .heading-dua p {
+        font-size: 0.8rem;
+    }
+
+    .description p {
+        font-size: 0.9rem;
+    }
+    
+    .paragraph-description p {
+        font-size: 0.8rem;     
+    }
+
+    .button-container button {
+        font-size: 0.7rem;
+    }
+
+    .paragraph-description p {
+        width: 90%;
+    }
+
+    .paragraph-bottom {
+        width: 85%;
+    }
+}
+
+.name {
+    color: var(--primary-color);
+}
+
+.heading-wrapper {
+    padding: 0;
+    margin-top: 5rem;
+}
+
+.paragraph {
+    color: rgba(0, 0, 0, 60%);
+    font-size: 1rem;
+}
+
+.paragraph-bottom {
+    /* font-size: 1.1rem; */
+    color: rgba(0, 0, 0, 70%);
+}
+
+.paragraph-dua {
+    width: 70%;
+    text-align: justify;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 50%);
+    margin-top: 10px;
+    /* font-size: 0.9rem; */
+}
+
+.description {
+    line-height: 30px;
+    width: 365px;
+}
+
+.c-satu::before, .c-dua::before, .c-tiga::before, .c-empat::before {
+    content: '|';
+    color: #868686;
+}
+
+.illustrator, .designer {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.button-container {
+    display: flex;
+    padding-top: 30px;
+    gap: 20px;
+}
+
+.contact-button .overview-button, button {
+    padding: 1em 2em;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    transition: 0.1s ease-in;
+}
+
+.contact-button {
+    border: 1px solid rgb(13, 221, 148, 0%);
+}
+
+.overview-button {
+    background-color: rgb(13, 221, 148, 0%);
+    color: #202020;
+    border: 1px solid rgb(32, 32, 32, 50%);
+}
+
+.overview-button:hover {
+    color: #fff;
+    background-color: var(--accent-color);
+    border: 1px solid rgb(32, 32, 32, 0%);
+}
+
+.contact-button:hover, .overview-button:hover {
+    cursor: pointer;
+}
+
+.contact-button:hover {
+    background-color: rgb(13, 221, 148, 0%);
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.page-wrapper {
+    margin-top: 5rem;
+    height: 500px;
+    background-color: var(--accent-color);
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+    color: var(--primary-color);
+    padding-top: 30px;
+    padding-bottom: 1.2rem;
+}
+
+.card-container {
+    display: flex;
+    margin-top: 30px;
+    font-size: 0.6em;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.card-satu, .card-dua, .card-tiga, .card-empat {
+    border-radius: 12px;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 30px;
+    height: 300px;
+    width: 150px;
+    background-color: #0ddd94;
+}
