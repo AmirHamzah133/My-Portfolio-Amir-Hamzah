@@ -131,7 +131,7 @@ nav {
 }
 
 .navbar-wrapper {
-    padding-top: 4rem;
+    padding-top: 3rem;
 }
 
 .hero {
@@ -263,13 +263,13 @@ nav {
 .overview-button {
     background-color: rgb(13, 221, 148, 0%);
     color: #202020;
-    border: 1px solid rgb(32, 32, 32, 50%);
+    border: 1px solid rgb(31, 41, 55, 50%);
 }
 
 .overview-button:hover {
     color: #fff;
     background-color: var(--accent-color);
-    border: 1px solid rgb(32, 32, 32, 0%);
+    border: 1px solid rgb(31, 41, 55, 0%);
 }
 
 .contact-button:hover, .overview-button:hover {
