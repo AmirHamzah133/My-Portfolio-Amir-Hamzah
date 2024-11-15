@@ -76,6 +76,10 @@ body {
     .profile .bubble {
         display: none;
     }
+
+    .button-container button {
+        font-size: 0.85em;
+    }
 }
 
 .nav {
@@ -233,7 +237,7 @@ nav {
 }
 
 .contact-button .overview-button, button {
-    padding: 0.9em 3em;
+    padding: 1em 3em;
     font-weight: 600;
     text-align: center;
     color: #fff;
