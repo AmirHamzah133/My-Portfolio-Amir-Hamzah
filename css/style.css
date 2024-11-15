@@ -62,11 +62,15 @@ body {
     }
 
     .row-satu, .row-dua {
-        flex-direction: column-reverse;
+        flex-direction: column;
+    }
+
+    .job-description-wrapper {
+        margin-top: 8px;
     }
     
     .job-description-container p {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .profile .bubble {
@@ -193,10 +197,11 @@ nav {
 } */
 
 .job-description-container {
-    /* background-color: rgba(37, 213, 122, 0.03);
+    background-color: rgba(37, 213, 122, 0.03);
+    border-left: 6px solid rgba(37, 213, 122, 0.20);
     width: fit-content;
     border-radius: 8px;
-    padding: 8px 10px; */
+    padding: 8px 10px;
     font-weight: 400;
     font-size: 1.05rem;
     line-height: 26px;
