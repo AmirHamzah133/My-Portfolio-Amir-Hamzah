@@ -51,7 +51,7 @@ body {
 
     .paragraph-description p {
         width: 98%;
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .paragraph-bottom {
@@ -187,7 +187,7 @@ body {
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.030);
   background-color: rgb(255, 255, 255, 98%);
   backdrop-filter: blur(42px);
-  mix-blend-mode: soft-light;
+  mix-blend-mode: color-burn;
   border: 1px solid rgba(0, 0, 0, 0.080);
 }
 
@@ -313,6 +313,7 @@ nav ul {
 .i-am-a p {
     font-size: 1.25rem;
     padding: 8px 10px;
+    padding-top: 0;
     font-weight: 500;
     color: rgba(31, 41, 55, 0.95);
 }
