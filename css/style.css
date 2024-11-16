@@ -15,8 +15,8 @@ body {
 }
 
 :root {
-    --primary-color: #6ee7b7;
-    --secondary-color: #34d399;
+    --primary-color: #34d399;
+    --secondary-color: #10b981;
     --accent-color: #1f2937;
 }
 
@@ -51,6 +51,7 @@ body {
 
     .paragraph-description p {
         width: 98%;
+        font-size: 0.8rem;
     }
 
     .paragraph-bottom {
@@ -79,67 +80,129 @@ body {
     }
 }
 
-.nav {
+.logo-nav-kiri {
+  color: #000;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.span-logo {
+    color: var(--secondary-color);
+    /* background-color: rgb(45, 174, 99, 14%); */
+    padding: 2px 8px;
+    border-radius: 24px;
+}
+
+.logo-kiri {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 10px;
+  font-size: 1.2rem;
+}
+
+
+.icon-container {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 12px;
+}
+
+.search-icon {
+  stroke: var(--primary-color);
+}
+
+.search-icon:hover {
+  cursor: pointer;
+  stroke: #8d8d8d;
+}
+
+.user-icon {
+  stroke: var(--primary-color);
+}
+
+.user-icon:hover {
+  cursor: pointer;
+  stroke: #8d8d8d;
+}
+
+.elemen-center {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 16px;
+}
+
+
+/* STYLE SEARCH BOX */
+.elemen-center input {
+  background-color: rgb(45, 174, 99, 2%);
+  border: 1px solid var(--primary-color);
+  padding: 4px 8px;
+  width: 60%;
+  padding: 10px 14px;
+  border-radius: 24px;
+}
+
+/* Penyesuaian navbar agar posisinya tetap fix ketika website discroll */
+.navbar {
+  padding: 1.6em 1em;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 1rem;
+  z-index: 999;
+  font-size: 0.9rem;
+  position: fixed;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.030);
+  background-color: rgb(255, 255, 255, 98%);
+  backdrop-filter: blur(42px);
+  mix-blend-mode: soft-light;
+  border: 1px solid rgba(0, 0, 0, 0.080);
+}
+
+/* Memposisikan display list menu dari navbar menjadi sejajar dan flex-end */
+nav ul {
     display: flex;
-    flex-wrap: wrap;
+    column-gap: 20px;
+    list-style-type: none;
+    padding-left: 2em;
+    padding-right: 4em;
     justify-content: flex-end;
-    column-gap: 30px;
-    font-size: 0.9rem;
-    padding: 26px 0;
-    position: fixed;
-    z-index: 999;
-    top: 0;
-    right: 0;
-    padding-right: 30px;
     align-items: center;
-    width: 100%;
-    border-bottom: 1px solid rgba(0, 0, 0, 6%);
-    background-color: rgba(249, 255, 253, 0.95);
-    backdrop-filter: blur(32px);
-}
+  }
 
-nav {
-    mix-blend-mode: color-burn;
-}
+  nav li a {
+    display: block;
+    color: #333;
+    font-weight: 400;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+  }
 
-.logo-container, .logo-kiri svg {
-    display: flex;
-    flex-direction: row-reverse;
-    z-index: 9999;
-    justify-content: flex-start;
-    align-items: center;
-}
+  .menu {
+    padding: 0.7em 1em;
+    border-radius: 8px;
+  }
 
-.navbar {
-    padding: 30px;
-}
-
-.nav a {
-    padding: 4px 6px;
-    border-radius: 6px;
-}
-
-.navbar-wrapper nav a:hover {
-    transform: translateY(1.05px);
-    background-color: rgb(110, 231, 183, 10%);
-    color: var(--primary-color);
-    transition: 0.2s ease-in-out;
-}
-
-.navbar {
-    padding: 6px 0;
-}
-
-.navbar-wrapper {
-    padding-top: 3rem;
-}
+  /* Membuat animasi perubahan warna dan posisi saat dihover pada menu navigation bar agar lebih terasa dinamis dan interaktif*/
+  .menu:hover {
+    transform: translateY(2.5px);
+    color: var(--secondary-color);
+    background-color: rgb(13, 221, 148, 12%);
+    transition: ease-in-out 0.2s;
+  }
 
 .hero {
     margin: 0 10%;
 }
 
 .heading-dua p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 500;
     color: rgb(0, 0, 0, 70%);
 }
@@ -147,7 +210,7 @@ nav {
 .int-span {
     font-weight: 400;
     color: rgb(0, 0, 0, 40%);
-    font-size: 1.1rem;
+    font-size: 1rem;
 
 }
 
@@ -157,17 +220,17 @@ nav {
 
 .name-heading {
     /* padding: 4px 0; */
-    font-size: 2.05rem;
+    font-size: 2rem;
 }
 
 .name-span {
     color: var(--primary-color);
-        letter-spacing: -2px;
+    letter-spacing: -2px;
 }
 
 .heading-wrapper {
     padding: 0;
-    margin-top: 5rem;
+    margin-top: 9rem;
 }
 
 .paragraph {
@@ -220,6 +283,13 @@ nav {
     line-height: 26px;
 }
 
+.i-am-a p {
+    font-size: 1.25rem;
+    padding: 8px 10px;
+    font-weight: 500;
+    color: rgba(31, 41, 55, 0.95);
+}
+
 /* .ui-ux, .frontend, .illustrator, .gr-designer p {
     color: rgba(0, 0, 0, 70%);
 } */
@@ -252,7 +322,7 @@ nav {
     text-align: center;
     color: #fff;
     border-radius: 10px;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     transition: 0.1s ease-in;
 }
 
@@ -277,7 +347,7 @@ nav {
 }
 
 .contact-button:hover {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 .page-wrapper {
