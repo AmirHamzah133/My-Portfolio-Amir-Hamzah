@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 body {
+    /* width: 100vw; */
+    background-color: rgb(245, 249, 255);
     margin: 0;
     padding: 0;
 }
@@ -15,9 +17,14 @@ body {
 }
 
 :root {
+    /* UI COLOR */
     --primary-color: #34d399;
     --secondary-color: #10b981;
     --accent-color: #1f2937;
+
+    /* Hover color */
+    --primary-color-light: #44e5aa;
+    --primary-color-darker: #18b480;
 }
 
 @media (max-width: 546px) {
@@ -185,9 +192,10 @@ body {
   font-size: 0.9rem;
   position: fixed;
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.030);
-  background-color: rgb(255, 255, 255, 98%);
-  backdrop-filter: blur(42px);
-  mix-blend-mode: color-burn;
+  /* background-color: rgb(255, 255, 255, 98%); */
+  background-color: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(32px);
+  /* mix-blend-mode: color-burn; */
   border: 1px solid rgba(0, 0, 0, 0.080);
 }
 
@@ -204,13 +212,14 @@ nav ul {
 
   nav li a {
     display: block;
-    color: #333;
+    color: #303030;
     font-weight: 400;
     text-align: center;
     padding: 1rem;
     text-decoration: none;
   }
 
+  
   .menu {
     padding: 0.7em 1em;
     border-radius: 8px;
@@ -224,8 +233,18 @@ nav ul {
     transition: ease-in-out 0.2s;
   }
 
-.hero {
-    margin: 0 10%;
+.hero .heading-wrapper   {
+    padding: 3em 0;   
+}
+.landing-page-hero-w {
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+}
+
+.heading-wrapper {
+    margin: 0 8%;
+    padding: 0;
+    margin-top: 7.5rem;
 }
 
 .heading-dua p {
@@ -255,10 +274,7 @@ nav ul {
     letter-spacing: -2px;
 }
 
-.heading-wrapper {
-    padding: 0;
-    margin-top: 10rem;
-}
+/* JEDA SECTION */
 
 .paragraph {
     color: rgba(0, 0, 0, 50%);
@@ -290,24 +306,30 @@ nav ul {
     transform: translateX(-50px);
 }
 
-.row-satu, .row-dua {
-    display: flex;
-    column-gap: 4px;
+.row-satu .row-dua p {
+    padding: 0;
+    gap: 0;
+    margin: 0;
 }
 
 /* .job-description-wrapper {
     width: 380px;
 } */
 
-.job-description-container {
-    background-color: rgba(37, 213, 122, 0.03);
-    border-left: 6px solid rgba(37, 213, 122, 0.20);
-    width: fit-content;
-    border-radius: 8px;
+.job-description-container .row-satu, .job-description-container .row-dua {
+    display: flex;
+    flex-direction: column;
     padding: 8px 10px;
     font-weight: 400;
     font-size: 1.05rem;
     line-height: 26px;
+}
+
+.job-description-wrapper {
+    border-radius: 8px;
+    background-color: rgba(37, 213, 122, 0.03);
+    border-left: 6px solid rgba(37, 213, 122, 0.20);
+    width: fit-content;
 }
 
 .i-am-a p {
@@ -344,12 +366,12 @@ nav ul {
 }
 
 .contact-button .overview-button, button {
-    font-size: 0.9em;
-    padding: 1em 3em;
-    font-weight: 600;
+    font-size: 0.945em;
+    padding: 0.955em 2.755em;
+    font-weight: normal;
     text-align: center;
     color: #fff;
-    border-radius: 10px;
+    border-radius: 24px;
     background-color: var(--primary-color);
     transition: 0.1s ease-in;
 }
@@ -364,9 +386,14 @@ nav ul {
     border: 1px solid rgb(31, 41, 55, 50%);
 }
 
+.row-satu p::after, .row-dua p::after {
+    content: '— 2+ month experience';
+    color: rgba(0, 0, 0, 30%);
+}
+
 .overview-button:hover {
     color: #fff;
-    background-color: var(--accent-color);
+    background-color: #161b20;
     border: 1px solid rgb(31, 41, 55, 0%);
 }
 
@@ -375,7 +402,7 @@ nav ul {
 }
 
 .contact-button:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color-light);
 }
 
 .page-wrapper {

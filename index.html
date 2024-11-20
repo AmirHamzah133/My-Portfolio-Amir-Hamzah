@@ -10,9 +10,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
+    <div class="navbar-container">
+
+        <nav class="navbar">
             <ul>
-              <div class="logo-kiri">
+                <div class="logo-kiri">
                 <!-- <img class="my-svg" width="32px" height="32px" src="assets\Asset 1Favicon.png" /> -->
                 <a class="logo-nav-kiri" href="#home"><h1>Amir &mdash; <span class="span-logo">Hamzah</span></h1></a>
                 <div class="elemen-center">
@@ -32,9 +34,10 @@
               </div>
             </ul>
           </nav>
+</div>
 
     <!-- HERO SECTION -->
-
+<main class="landing-page-hero-w">
     <section class="hero" id="hero">
         <div class="heading-wrapper">
             <div class="heading">
@@ -45,19 +48,23 @@
                 <div class="name-heading">
                         <h2 class="name-span">Amir Hamzah<span style="color: rgb(0, 0, 0, 50%)";>.</span></h2>
                     </div>
+                    <!-- <div class="paragraph">
+                        <p class="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde explicabo, ad est assumenda quis ratione veniam id saepe. Cupiditate quae tempore ab reiciendis est doloremque placeat delectus, rerum quia expedita.</p>
+                    </div> -->
+                    <div class="i-am-a">
+                        <p class="iam">Who am I? <span style="color: rgb(0, 0, 0, 50%)">I'am a :</span></p>
+                    </div>
+
                     <div class="job-description-wrapper">
-                        <div class="i-am-a">
-                            <p class="iam">My skills:</p>
-                        </div>
                         <div class="job-description-container">
                             <div class="row-satu">
-                                <p class="ui-ux"><span class="c-satu"> UI/UX <span class="ui-ux-designer-span">Designer</span>
+                                <p class="ui-ux"><span class="c-satu"> UI/UX <span class="ui-ux-designer-span">Designer</span></p>
                                 
                                 <p class="frontend"><span class="c-dua"> Junior Front-end </span><span class="frontend-span">Developer</span></p>
                             </div>
                             
                             <div class="row-dua">
-                                <p class="illustrator"><span class="c-tiga"> Digital </span><span class="illustrator-span"> Illustrator</span></p>
+                                <p class="illustrator"><span class="c-tiga"> Junior </span><span class="illustrator-span"> Illustrator</span></p>
                                 
                                 <p class="gr-designer"><span class="c-empat"> Graphic </span><span class="gr-designer-span">Designer</span></p>
                             </div>
@@ -65,18 +72,20 @@
                     </div>
                     <div class="paragraph-description">
                         <p class="paragraph-dua">Sangat tertarik dengan bidang olahraga Badminton dan bidang IT sejak kecil, mulai mempelajari <span style="font-weight:500; color: rgb(0, 0, 0, 40%); text-decoration: underline; cursor: pointer;">Web Development</span> & <span style="font-weight:500; color: rgb(0, 0, 0, 40%); text-decoration: underline; cursor: pointer;">Programming</span> pada usia 16 Tahun.</p>
-                    </div>
-                    </div>
+                        <div class="button-container">
+                    <button class="contact-button" id="contactbutton">Contact Me</button>
+                    <button class="overview-button" id="overviewbutton">Overview</button>
+                </div>
+            </div>
+            </div>
                 
                     <!-- <div class="profile">
                         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1702.87 1740.55"><defs><style>.cls-1{fill:#4dffb2;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M1701.22,890c41.9,525.77-727.91,848.15-850.45,850.45-151.64,2.86-294.56-55.85-294.56-55.85-192.85-79.22-297.47-218.69-359.57-303.71C115.66,1270-7,1102,.32,890,9.2,633.47,140.85,448.66,259.48,302.19,373.79,161.05,491.66,15.53,668.79,1.1,770.6-7.2,868.15,29.76,1056.28,171.28,1473.05,484.8,1681.43,641.56,1701.22,890Z"/></g></g></svg>
                     </div> -->
                 </div>
-                <div class="button-container">
-            <button class="contact-button" id="contactbutton">Contact Me</button>
-            <button class="overview-button" id="overviewbutton">Overview</button>
             </section>
-            
+      </main>      
+
     <section class="contact-me">
         <div class="page-wrapper">
             <div class="page">
